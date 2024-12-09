@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="el">
+    
+<script src="script.js" defer></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Διαχείριση Εργασιών</title>
+</head>
+<body>
+    <h1>Διαχείριση Εργασιών</h1>
+
+    <!-- Dropdown για την επιλογή κατηγορίας -->
+    <label for="category">Επιλέξτε κατηγορία:</label>
+    <select id="category">
+        <option value="Σπίτι">Σπίτι</option>
+        <option value="Δουλειά">Δουλειά</option>
+        <option value="Άλλο">Άλλο</option>
+    </select>
+
+    <!-- Εισαγωγή εργασίας -->
+    <input type="text" id="taskInput" placeholder="Προσθήκη νέας εργασίας" />
+    
+    <!-- Ημερομηνία λήξης -->
+    <label for="dueDate">Ημερομηνία λήξης:</label>
+    <input type="date" id="dueDate" />
+
+    <button onclick="addTask()">Προσθήκη Εργασίας</button>
+
+    <!-- Εμφάνιση εργασιών -->
+    <h2>Εργασίες</h2>
+    <div id="tasksContainer"></div>
+</body>
+</html>
